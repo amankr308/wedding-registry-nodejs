@@ -10,6 +10,7 @@ var app = Express();
 
 app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({ extended: true }));
+app.use(cors());
 
 var database, collection;
 
